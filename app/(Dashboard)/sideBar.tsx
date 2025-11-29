@@ -8,17 +8,15 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
-  BriefcaseBusiness,
-  CalendarCheck,
-  HelpCircle,
-  History,
+  BarChart3,
+  BellDot,
   LayoutDashboard,
-  LineChart,
   Settings,
-  Store,
+  ShieldAlert,
+  Tags,
+  Trophy,
   User,
   Users,
-  Wallet,
 } from "lucide-react";
 
 interface ISideBarProps {
@@ -30,13 +28,11 @@ const navItems = [
   { name: "Overview", icon: <LayoutDashboard size={24} />, path: "/dashboard_overview" },
   { name: "User Management", icon: <User size={24} />, path: "/user_management" },
   { name: "Community & Posts", icon: <Users size={24} />, path: "/posts" },
-  { name: "Events", icon: <CalendarCheck size={24} />, path: "/event" },
-  { name: "Marketplace", icon: <Store size={24} />, path: "/marketplace" },
-  { name: "Business & Vendor Management", icon: <BriefcaseBusiness size={24} />, path: "/business" },
-  { name: "Payment & Commissions", icon: <Wallet size={24} />, path: "/payment" },
-  { name: "Community Update & Resources", icon: <History size={24} />, path: "/resources" },
-  { name: "Support & Moderations", icon: <HelpCircle size={24} />, path: "/support" },
-  { name: "Analytics & Insight", icon: <LineChart size={24} />, path: "/analytics" },
+  { name: "Categories", icon: <Tags size={24} />, path: "/event" },
+  { name: "Notification Center", icon: <BellDot size={24} />, path: "/marketplace" },
+  { name: "Points & Commissions", icon: <Trophy size={24} />, path: "/leaderboard" },
+  { name: "Report & Moderations", icon: <ShieldAlert  size={24} />, path: "/Report" },
+  { name: "Analytics & Insight", icon: <BarChart3 size={24} />, path: "/analytics" },
   { name: "System Settings", icon: <Settings size={24} />, path: "/settings" },
 ];
 
@@ -66,7 +62,7 @@ export const Sidebar = ({ name, image }: ISideBarProps) => {
         `}
       >
         <div className="mt-8 px-5 mb-4 relative">
-          <p className="font-bold text-lg">Jami Admin</p>
+          <p className="font-bold text-lg">City plus</p>
 
           {/* Close Button on Mobile */}
           <button

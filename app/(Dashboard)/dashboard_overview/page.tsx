@@ -78,8 +78,8 @@ export default function AdminDash(){
         {/* Main */}
         <main className="md:w-full md:overflow-x-hidden md:ml-0">
           {/* Header */}
-          <div className="bg-white shadow-md pt-5 py-4 flex justify-between gap-8 md:justify-between items-center px-5">
-            <p className="hidden md:block">Dashboard</p>
+          <div className="bg-white shadow-md pt-5 py-4 flex gap-8 justify-end md:justify-between items-center px-5 w-full">
+            <p className="hidden md:block font-[600]">Dashboard</p>
             <div className="flex gap-2 items-center">
               <Input className="ml-10 md:ml-0" placeholder="search..."/>
               <button onClick={() => setShowNotify(true)}>

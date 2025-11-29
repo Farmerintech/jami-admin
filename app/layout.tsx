@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jami | Admin Login",
-  description: "Jami | Login",
+  title: "Cityplus | Admin Login",
+  description: "Cityplus Admin Login Page",
 };
 
 export default function RootLayout({
